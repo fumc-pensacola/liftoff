@@ -1,0 +1,3 @@
+[submodule "api/satellite"]
+	path = api/satellite
+	url = git://github.com/fumc-pensacola/satellite.git
