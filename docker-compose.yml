@@ -2,3 +2,9 @@ api:
   build: api
   ports:
     - "3000:3000"
+nginx:
+  build: nginx
+  ports:
+    - "80:80"
+  links:
+    - api
