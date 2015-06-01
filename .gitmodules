@@ -1,3 +1,6 @@
 [submodule "api/satellite"]
 	path = api/satellite
 	url = git://github.com/fumc-pensacola/satellite.git
+[submodule "nginx/rocket-engine-x"]
+	path = nginx/rocket-engine-x
+	url = git://github.com/fumc-pensacola/rocket-engine-x.git
