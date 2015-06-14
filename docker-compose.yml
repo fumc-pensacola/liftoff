@@ -8,9 +8,3 @@ nginx:
     - "80:80"
   links:
     - api
-  volumes_from:
-    - frontend
-frontend:
-  build: frontend
-  environment:
-    - EMBER_ENV

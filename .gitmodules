@@ -1,10 +1,3 @@
 [submodule "api/satellite"]
 	path = api/satellite
 	url = git://github.com/fumc-pensacola/satellite.git
-[submodule "nginx/rocket-engine-x"]
-	path = nginx/rocket-engine-x
-	url = git://github.com/fumc-pensacola/rocket-engine-x.git
-[submodule "frontend/mission-control"]
-	path = frontend/mission-control
-	url = git://github.com/fumc-pensacola/mission-control.git
-	branch = prepare-for-docker
