@@ -1,7 +1,23 @@
+#
+# Redirect all non-encrypted to encrypted
+#
 server {
     server_name ~^api\.fumcpensacola\.(com|local)$;
+
     listen *:80;
     listen [::]:80;
+
+    return 301 https://api.fumcpensacola.$1$request_uri;
+}
+
+server {
+    server_name ~^api\.fumcpensacola\.(com|local)$;
+    listen *:443 ssl spdy;
+    listen [::]:443 ssl spdy;
+    
+    ssl_certificate /etc/nginx/ssl/api.fumcpensacola.com.crt;
+    ssl_certificate_key /etc/nginx/ssl/api.fumcpensacola.com.key;
+    add_header Strict-Transport-Security "max-age=31536000";
 
     location / {
         proxy_pass http://api:3000;
