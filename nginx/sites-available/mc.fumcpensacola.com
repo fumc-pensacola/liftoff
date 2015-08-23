@@ -19,7 +19,7 @@ server {
     location ~^/assets|[^/]+\.[^/]+$ {
       set $s3_bucket 'fumc-mission-control.s3-website-us-east-1.amazonaws.com';
       proxy_http_version     1.1;
-      proxy_set_header       Host $bucket;
+      proxy_set_header       Host $s3_bucket;
       proxy_set_header       Authorization '';
       proxy_hide_header      x-amz-id-2;
       proxy_hide_header      x-amz-request-id;
@@ -36,7 +36,7 @@ server {
     location / {
       set $s3_bucket 'fumc-mission-control.s3-website-us-east-1.amazonaws.com';
       proxy_http_version     1.1;
-      proxy_set_header       Host $bucket;
+      proxy_set_header       Host $s3_bucket;
       proxy_set_header       Authorization '';
       proxy_hide_header      x-amz-id-2;
       proxy_hide_header      x-amz-request-id;
