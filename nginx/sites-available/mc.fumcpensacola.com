@@ -4,7 +4,7 @@
 server {
     server_name ~^mc\.fumcpensacola\.(com|local)$;
     listen 80;
-    https://$host$request_uri;
+    return 301 https://$host$request_uri;
 }
 
 server {
