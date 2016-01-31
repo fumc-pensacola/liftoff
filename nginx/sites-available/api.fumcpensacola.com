@@ -15,7 +15,7 @@ server {
     listen *:443 ssl spdy;
     listen [::]:443 ssl spdy;
     
-    ssl_certificate /etc/nginx/ssl/api.fumcpensacola.com.crt;
+    ssl_certificate /etc/nginx/ssl/api.fumcpensacola.com.chained.crt;
     ssl_certificate_key /etc/nginx/ssl/api.fumcpensacola.com.key;
     add_header Strict-Transport-Security "max-age=31536000";
 
