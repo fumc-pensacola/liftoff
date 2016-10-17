@@ -1,3 +1,6 @@
 [submodule "api/satellite"]
 	path = api/satellite
 	url = git://github.com/fumc-pensacola/satellite.git
+[submodule "hubot/gerty"]
+	path = hubot/gerty
+	url = git@github.com:fumc-pensacola/gerty
