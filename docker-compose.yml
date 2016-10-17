@@ -9,3 +9,7 @@ nginx:
     - "443:443"
   links:
     - api
+hubot:
+  build: hubot
+  ports:
+    - "6379:6379"
