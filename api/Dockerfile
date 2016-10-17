@@ -1,6 +1,6 @@
-FROM iojs:2.1
+FROM node:argon
 
-MAINTAINER Andrew Branch "andrewbranch@mail.com"
+MAINTAINER Andrew Branch "andrew@wheream.io"
 
 # Create directories on container
 RUN mkdir -p /var/www /tmp
