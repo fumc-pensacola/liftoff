@@ -9,7 +9,12 @@ nginx:
     - "443:443"
   links:
     - api
+redis:
+  image: redis:latest
+  command: redis-server --appendonly yes
+  volumes:
+    - ./data:/data
 hubot:
   build: hubot
-  ports:
-    - "6379:6379"
+  links:
+    - redis

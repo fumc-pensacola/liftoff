@@ -11,5 +11,4 @@ COPY gerty .
 COPY .env .env
 
 # Start the app
-EXPOSE 6379
 CMD ["bin/hubot", "-a", "slack"]
