@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:latest
 
 MAINTAINER Andrew Branch "andrew@wheream.io"
 
